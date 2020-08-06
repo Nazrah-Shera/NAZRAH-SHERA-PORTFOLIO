@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--A <meta> viewport element gives the browser instructions on how to control the page's dimensions and scaling.Including a viewport meta tag for proper responsive behaviors.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<style>
+  #button1{
+    height: 80px;
+
+  }
+  #button2{
+    height: 80px;
+
+  }
+  #button3{
+    height: 80px;
+
+  }
+  .navbar{
+    padding: 0em;
+  }
+
+
+
+  .carousel-caption{
+  
+  font-weight: 100;
+  text-shadow: 0 1px 2px #000;
+  position:fixed;
+  
+}
+
+
+
+#image1{
+  width:100%;
+  max-height: 580px !important;
+}
+
+.carousel-inner{
+  width:100%;
+  max-height: 680px !important;
+}
+
+
+
+
+
+
+
+@media (min-width: 1201px) and (max-width: 5000px) {
+  .carousel-caption {
+    margin-bottom: 120px;
+    margin-left: 0em;
+    font-size: 20px; 
+  }
+  .carousel-caption h3 {
+    font-size: 40px;
+  }
+}
+
+ 
+@media (min-width: 800px) and (max-width: 1200px) {
+  .carousel-caption {
+    margin-bottom: 70px;
+    margin-left: 0em;
+    font-size: 20px; 
+  }
+  .carousel-caption h3 {
+    font-size: 35px;
+  }
+}
+ 
+@media (min-width: 600px) and (max-width: 799px) {
+  .carousel-caption {
+    margin-bottom: 40px;
+    margin-left: 0em;   
+  }
+
+}
+
+@media (min-width: 500px) and (max-width: 599px) {
+  .carousel-caption {
+    font-size: 12px;
+  margin-left: 0px;
+  margin-bottom: 20px;
+  }
+  .carousel-caption h3 {
+    font-size: 17px;
+  }
+}
+/*
+@media (min-width: 400px) and (max-width: 499px) {
+  .carousel-caption{
+   
+  }
+  
+}
+@media (min-width: 200px) and (max-width: 399px) {
+  .carousel-caption {
+ 
+  }
+  
+}
+*/
+
+</style>
+
+<body>
+  <div>  
+
+
+
+
+    <!--NAVIGATION BAR-->
+    <nav class="navbar navbar-expand-md " style="background-color:white">
+        
+        <!-- Brand -->
+        
+        <a class="navbar-brand pl-5" href="#" 
+        style="font-family:'Lucida Sans','Lucida Sans Regular','Lucida Grande','Lucida Sans Unicode',Geneva,Verdana,sans-serif;color: black;">NAZRAH SHERA</a>
+    
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar" >
+            
+          <ul class="navbar-nav px-5">
+          
+            <!-- Dropdown -->
+           <li class="nav-item dropdown mx-2">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" style="font-weight:lighter;font-size: 15px; color: rgb(0, 0, 0);">
+              MY PROJECTS
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Link 1</a>
+              <a class="dropdown-item" href="#">Link 2</a>
+              <a class="dropdown-item" href="#">Link 3</a>
+            </div>
+          </li>
+          <!--------DROPDOWN END------->
+    <!-- Dropdown -->
+    <li class="nav-item dropdown mx-2">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" style="font-weight: lighter;font-size: 15px;color: rgb(0, 0, 0);">
+          MY WORK
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Link 1</a>
+          <a class="dropdown-item" href="#">Link 2</a>
+          <a class="dropdown-item" href="#">Link 3</a>
+        </div>
+      </li>
+      <!--------DROPDOWN END------->
+    
+    
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#" style="font-weight: lighter;font-size: 15px;color: rgb(0, 0, 0);">BLOGS</a>
+            </li>
+    
+    
+           <!-- Dropdown -->
+           <li class="nav-item dropdown mx-2">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" style="font-weight: lighter;font-size: 15px;color: rgb(0, 0, 0);">
+              ABOUT ME
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Link 1</a>
+              <a class="dropdown-item" href="#">Link 2</a>
+              <a class="dropdown-item" href="#">Link 3</a>
+            </div>
+          </li>
+          <!--------DROPDOWN END------->
+    
+    
+           <!-- Dropdown -->
+           <li class="nav-item dropdown mx-2">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" style="font-weight: lighter;font-size: 15px;color: rgb(0, 0, 0);">
+              MY RESUME
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Link 1</a>
+              <a class="dropdown-item" href="#">Link 2</a>
+              <a class="dropdown-item" href="#">Link 3</a>
+            </div>
+          </li>
+          <!--------DROPDOWN END------->
+        </ul>
+        
+          
+          <li style="list-style: none;">
+            <input id="button1" type="button" class="btn btn-light col-sm-12 "  value="MY LOCATION" style="background-color: #F2F1F0;border-radius: 0em;">
+            
+        </li>
+        <li style="list-style: none;">
+            <input id="button2" type="button" class="btn btn-light col-sm-12"  value="GET IN TOUCH" style="background-color: #0C2340;color: ivory;border-radius: 0em;border:0em">
+            
+        </li>    
+        <li style="list-style: none;">
+            <button id="button3" type="submit" class="btn btn-light col-sm-12" style=" background-color: white;border-radius: 0em;"><i class="fa fa-search" style="font-size: 25px;padding: 20px;" ></i></button>
+        </li>
+        </div>
+      </nav>
+      </div>
+      <!---NAV BAR ENDDDDDDDD-->
+      
+<div>  
+
+
+  <!--------------------SLIDER-------------------------------------->
+  <div style="display:block;width: 100%; height: auto;">
+  
+    <div id="demo" class="carousel slide " data-ride="carousel" >
+  
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+          <li data-target="#demo" data-slide-to="3"></li>
+          <li data-target="#demo" data-slide-to="4"></li>
+          <li data-target="#demo" data-slide-to="5"></li>
+          
+        
+        </ul>
+        
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img id="image1" class="d-block " src="images/a.jpg" alt="SLIDER 1">
+          <div class="carousel-caption left-caption text-left" id="slider_text">
+            <p > I DESIGN & BUILD BRANDS</p>
+            <h3 >Hi, I am NAZRAH SHERA <br/>This is my favourite work</h3>
+            
+              <button type="button" class="btn btn-dark">Hire me</button>
+            <button type="button" class="btn btn-light">Download CV</button>
+        
+            
+            
+          
+          </div>
+          </div>
+        
+          <div class="carousel-item">
+            <img id="image1"  class="d-block img-fluid"src="images/10.jpg" alt="SLIDER 2" width="100%" height="580">
+          </div>
+          <div class="carousel-item">
+            <img id="image1" class="d-block img-fluid"src="images/14.jpg" alt="SLIDER 3" width="100%" height="580">
+          </div>
+          <div class="carousel-item">
+            <img id="image1" class="d-block img-fluid"src="images/hi.jpg" alt="SLIDER 4" width="100%" height="580">
+          </div>
+          <div class="carousel-item">
+            <img id="image1" class="d-block img-fluid"src="images/2.jpg" alt="SLIDER 5" width="100%" height="580">
+          </div>
+          <div class="carousel-item">
+            <img id="image1" class="d-block img-fluid"src="images/3.jpg" alt="SLIDER 6" width="100%" height="580">
+          </div>
+        </div>
+        
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+  <!------------------SLIDER END-------------------------------->
+  
+  
+    </div>
+          <!--SLIDER ENDDDDDDDDDDDDDDDDDD-->
+    </body>
